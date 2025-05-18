@@ -1,0 +1,96 @@
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	opacity: 0;
+	z-index: -1;
+}
+
+.overlay.shown {
+	opacity: 1;
+	z-index: 5;
+}
+
+.detailBox {
+	position: fixed;
+	background-color: white;
+	top: 50%;
+	left: 50%;
+	display: flex;
+	transform: translate(-50%, 0%);
+	transition: transform 0.4s ease-in-out, opacity 0.2s ease-in-out;
+	opacity: 0;
+	z-index: -1;
+	padding: 20px;
+	gap: 50px;
+}
+
+.detailBox.shown {
+	transform: translate(-50%, -50%);
+	opacity: 1;
+	z-index: 6;
+}
+
+.detailDetails {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.detailImage {
+	max-height: 500px;
+	max-width: 500px;
+	/* margin: 20px; */
+}
+
+.detailTitle {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.detailRating {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.addToCart {
+	display: flex;
+}
+
+.detailNumber {
+	width: 30px;
+	text-align: center;
+}
+
+.plus {
+	margin-right: 10px;
+}
+
+/* .minus {
+	border-radius: 5px;
+	background-color: white;
+	border: rgb(176, 176, 176) solid 1px;
+	padding: 0px 7px;
+}
+
+.minus:active {
+	background-color: rgb(255, 148, 148);
+	box-shadow: 0 0 2px black;
+}
+
+.plus {
+	border-radius: 5px;
+	background-color: white;
+	border: rgb(176, 176, 176) solid 1px;
+	padding: 0px 7px;
+}
+
+.plus:active {
+	background-color: rgb(163, 255, 174);
+	box-shadow: 0 0 2px black;
+} */

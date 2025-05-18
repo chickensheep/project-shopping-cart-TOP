@@ -1,0 +1,41 @@
+.sidebarContainer {
+	display: flex;
+	position: fixed;
+	left: -220px;
+	top: 100px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.sidebarShown {
+	transform: translate(220px, 0);
+}
+
+.sidebarIcon {
+	width: 70px;
+	background-color: hsl(0, 0%, 90%);
+	border-radius: 50%;
+	padding: 10px;
+	transition: border-bottom-left-radius 0.3s ease-in-out,
+		border-top-left-radius 0.3s ease-in-out;
+}
+
+.sidebarIconShown {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.sidebarContent {
+	background-color: hsl(0, 0%, 90%);
+	width: 200px;
+	padding: 10px;
+}
+
+.sideBarHeader {
+	font-size: 20px;
+	font-weight: 500;
+	padding-bottom: 10px;
+}
+
+#selectFilter {
+	font-size: 200px;
+}

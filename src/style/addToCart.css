@@ -1,0 +1,32 @@
+.addToCartContainer {
+	position: fixed;
+	right: 0;
+	display: flex;
+	top: 100px;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.addToCartDiv {
+	display: flex;
+	width: 300px;
+	background-color: white;
+	z-index: 10;
+	border-radius: 10px;
+	text-decoration: none;
+	color: black;
+	border: 1px black solid;
+}
+
+.addToCartDiv:hover {
+	box-shadow: 0 0 10px black;
+}
+
+.addToCartImage {
+	max-height: 70px;
+	padding: 10px;
+}
+
+.addToCartLink {
+	text-decoration: none;
+}

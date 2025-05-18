@@ -1,0 +1,111 @@
+body {
+	font-family: "Poppins";
+}
+
+/* container */
+
+.shopContainer {
+	width: 1200px;
+	padding-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.itemContainer {
+	display: flex;
+}
+
+/* sidebar */
+
+.category {
+	display: flex;
+}
+
+/* item */
+
+.itemsDiv {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 100px 150px;
+}
+
+.itemDiv {
+	width: 300px;
+	text-align: center;
+	border-radius: 10px;
+	transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.itemDiv:hover {
+	box-shadow: 0 0 10px black;
+	transform: translate(0, -5px);
+}
+
+.itemImage {
+	height: 300px;
+	max-width: 300px;
+}
+
+.itemWords {
+	background-color: hsl(0, 0%, 90%);
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding: 0px 20px;
+	padding-top: 10px;
+	height: calc(100% - 316px);
+}
+
+.itemTitle {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.itemRating {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+}
+
+.star {
+	width: 20px;
+}
+
+/* loading */
+
+.loadingContainer {
+	padding-top: 100px;
+	text-align: center;
+}
+
+.loadingIcon {
+	animation: spin 2.5s alternate linear;
+	width: 200px;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* wishlist */
+
+.heartIcon {
+	color: white;
+	font-size: 22px;
+	cursor: pointer;
+	transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.heartIcon:hover {
+	transform: scale(1.2);
+}
+
+.redHeartIcon {
+	color: red;
+}

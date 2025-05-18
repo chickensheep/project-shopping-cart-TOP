@@ -1,0 +1,126 @@
+.navigationBar {
+	padding-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 30px;
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	background-color: white;
+}
+
+.icon {
+	width: 40px;
+}
+
+.lebron {
+	animation: shake 0.5s infinite alternate linear;
+}
+
+@keyframes shake {
+	from {
+		transform: rotate(-30deg);
+	}
+	to {
+		transform: rotate(30deg);
+	}
+}
+
+.navigationBarCenterDiv,
+.navigationBarRightDiv {
+	display: flex;
+	align-items: start;
+}
+
+.navigationBarCenterDiv {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	gap: 30px;
+}
+
+.navigationBarRightDiv {
+	gap: 15px;
+}
+
+/* links */
+
+.link {
+	text-decoration: none;
+	color: black;
+}
+
+.homeLink,
+.shopLink {
+	position: relative;
+	display: inline-block;
+}
+
+.homeLink:active {
+	background-color: hsl(0, 0%, 95%);
+}
+
+.shopLink:active {
+	background-color: hsl(0, 0%, 95%);
+}
+
+.homeLink::after {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 20%;
+	height: 2.5px;
+	width: 0px;
+	background-color: black;
+	transition: width 0.3s ease-in-out;
+}
+
+.shopLink::after {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 20%;
+	height: 2.5px;
+	width: 0px;
+	background-color: black;
+	transition: width 0.3s ease-in-out;
+}
+
+.homeLink:hover::after {
+	width: 100%;
+}
+
+.shopLink:hover::after {
+	width: 100%;
+}
+
+/* cart total number */
+
+.cartTotalNumber {
+	position: absolute;
+	background-color: hsl(0, 0%, 90%);
+	font-size: 15px;
+	border-radius: 100%;
+	padding: 0px 5px;
+	right: 50px;
+	text-decoration: none;
+	color: black;
+}
+
+/* cart icon */
+
+.cartIconDiv {
+	display: flex;
+}
+
+.cartTotalNumber,
+.cart {
+	transition: transform 0.15s ease-in-out;
+}
+
+.cartIconDiv:hover .cartTotalNumber,
+.cartIconDiv:hover .cart {
+	transform: scale(1.1);
+}
